@@ -1,0 +1,14 @@
+phases:
+  pre_build:
+    commands:
+      - sudo ls /root
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - python manage.py mysite
+  post_build:
+    commands:
+      - echo Build completed
+artifacts:
+  files:
+    - '**/*'
