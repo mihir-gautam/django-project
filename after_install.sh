@@ -5,7 +5,7 @@ cd /var/www/backend
 virtualenv -p python3 venv
 source venv/bin/activate
 pip install -r DjangoProject/mysite/requirements.txt
-python manage.py mysite
+python manage.py DjangoProject/mysite
 python manage.py collectstatic --no-input
 
 # Set permission for all files
